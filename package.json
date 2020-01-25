@@ -1,0 +1,31 @@
+{
+  "name": "stardom",
+  "version": "1.0.0",
+  "description": "github starred json database with REST api",
+  "main": "lib/index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "flow-remove-types src/ -d lib/",
+    "prepublish": "npm run build",
+    "flow": "flow"
+  },
+  "keywords": [
+    "github",
+    "stars",
+    "starred",
+    "db",
+    "json"
+  ],
+  "author": "tg-z",
+  "license": "ISC",
+  "devDependencies": {
+    "flow-bin": "^0.116.1",
+    "flow-remove-types": "^2.116.1",
+    "husky": "^4.2.1",
+    "lerna": "^3.20.2"
+  },
+  "dependencies": {
+    "generate-schema": "^2.6.0",
+    "lowdb": "^1.0.0"
+  }
+}
