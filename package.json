@@ -19,6 +19,7 @@
   "author": "tg-z",
   "license": "ISC",
   "devDependencies": {
+    "ava": "^3.1.0",
     "flow-bin": "^0.116.1",
     "flow-remove-types": "^2.116.1",
     "husky": "^4.2.1",
