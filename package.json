@@ -19,5 +19,25 @@
   "author": "tg-z",
   "license": "ISC",
   "devDependencies": {
+    "@babel/cli": "^7.0.0",
+    "@babel/core": "^7.0.1",
+    "@babel/plugin-proposal-object-rest-spread": "^7.0.0",
+    "@babel/preset-env": "^7.0.0",
+    "@babel/preset-react": "^7.0.0",
+    "babel-core": "^7.0.0-0",
+    "babel-jest": "^25.1.0",
+    "babel-loader": "^8.0.4",
+    "react": "^16.5.2",
+    "react-dom": "^16.5.2",
+    "regenerator-runtime": "^0.13.0",
+    "snazzy": "^8.0.0",
+    "standard": "^12.0.1",
+    "unfetch": "^4.0.1",
+    "webpack": "^4.16.5",
+    "webpack-cli": "^3.1.0",
+    "webpack-dev-server": "^3.1.9"
   },
+  "dependencies": {
+    "core-js": "3"
+  }
 }
