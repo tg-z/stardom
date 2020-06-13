@@ -19,14 +19,5 @@
   "author": "tg-z",
   "license": "ISC",
   "devDependencies": {
-    "ava": "^3.1.0",
-    "flow-bin": "^0.116.1",
-    "flow-remove-types": "^2.116.1",
-    "husky": "^4.2.1",
-    "shx": "^0.3.2"
   },
-  "dependencies": {
-    "generate-schema": "^2.6.0",
-    "lowdb": "^1.0.0"
-  }
 }
