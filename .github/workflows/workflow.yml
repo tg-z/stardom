@@ -1,4 +1,8 @@
+<<<<<<< HEAD
 name: 'update by stargazed'
+=======
+name: 'Update by stargazed'
+>>>>>>> 837b6bf0090772781ffa47ada293c2c103d4cd3d
 # This workflow runs at 00:30 everyday
 on:
   schedule:
@@ -10,14 +14,22 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       -
+<<<<<<< HEAD
         name: 'use gitHub actions'
         uses: actions/checkout@v2
       -
         name: 'use node.js 12.x'
+=======
+        name: 'Use GitHub Actions'
+        uses: actions/checkout@v2
+      -
+        name: 'Use Node.js 12.x'
+>>>>>>> 837b6bf0090772781ffa47ada293c2c103d4cd3d
         uses: actions/setup-node@v1
         with:
           node-version: 12.x
       -
+<<<<<<< HEAD
         name: 'install package'
         run: 'npm install --global stargazed'
       -
@@ -25,3 +37,12 @@ jobs:
         env:
           GITHUB_TOKEN: '${{ secrets.GITHUB_TOKEN }}'
         run: 'stargazed --username  "tg-z" --token ${GITHUB_TOKEN} --repo "stardom" --message "stargazed update by gitHub actions workflow" --sort'
+=======
+        name: 'Install Package'
+        run: 'npm install --global stargazed'
+      -
+        name: 'Update Repo'
+        env:
+          GITHUB_TOKEN: '${{ secrets.GITHUB_TOKEN }}'
+        run: 'stargazed --username  "tg-z" --token ${GITHUB_TOKEN} --repo "stardom" --message "stargazed update by GitHub Actions Workflow" --sort'
+>>>>>>> 837b6bf0090772781ffa47ada293c2c103d4cd3d
