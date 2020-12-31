@@ -13,10 +13,10 @@ jobs:
         name: 'use gitHub actions'
         uses: actions/checkout@v2
       -
-        name: 'use node.js 12.x'
+        name: 'use node.js 15.x'
         uses: actions/setup-node@v1
         with:
-          node-version: 12.x
+          node-version: 15.x
       -
         name: 'install package'
         run: 'npm install --global stargazed'
@@ -24,4 +24,4 @@ jobs:
         name: 'update repo'
         env:
           GITHUB_TOKEN: '${{ secrets.STARGAZED_TOKEN }}'
-        run: 'stargazed --username  "tg-z" --token ${STARGAZED_TOKEN} --repo "stardom" --message "stargazed update by gitHub actions workflow" --sort'
+        run: 'stargazed --username "tg-z" --token ${GITHUB_TOKEN} --repo "stardom" --message "stargazed update by gitHub actions workflow" --sort'
